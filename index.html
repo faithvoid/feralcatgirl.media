@@ -21,13 +21,7 @@
   <center><h4 style="color:pink">Faith Void | 26 | ae/aer </a></center>
   <center><h4 style="color:pink">Tkaronto-based programmer, experimental glitch artist, musician & photographer.</a></center>
     <center><br><br><br><br>
-<div id="app"></div>
-<script src="https://unpkg.com/webamp"></script>
-<script>
-    const app = document.getElementById("app")
-    const webamp = new Webamp();
-    webamp.renderWhenReady(app);
-</script>
+              
     <pre style="color:pink">                  _ _-^^"-,---,
                   _-""./  ||//_  /
                 _<_../    <-"__)'
@@ -81,4 +75,22 @@
                                               \ ,'
                                                "
            </pre></center>
+              <div id="app"></div>
+<script src="https://unpkg.com/webamp" align=right></script>
+<script>
+    const app = document.getElementById("app")
+    const webamp = new Webamp({
+                    metaData: {
+                        artist: "Chxrry",
+                        title: "do u dream of me"
+                    },
+                    url: "https://cdn.jsdelivr.net/gh/gnorkels/host@main/08-Infinite%20Underground%20(Stage%203%20BGM).mp3",
+                }
+            ],
+            initialSkin: {
+        url: "https://cdn.jsdelivr.net/gh/gnorkels/host@main/tricorder.wsz"
+    },
+              });
+    webamp.renderWhenReady(app);
+</script>
 <footer style="position: fixed; bottom: 0; width: 100%; color:pink">Made and hosted with love by <a href="https://github.com/faithvoid">Faith Void</a> @ <a href="https://virtual.dimensionless.space">virtual.dimensionless.space</a></a></div></div></footer>
