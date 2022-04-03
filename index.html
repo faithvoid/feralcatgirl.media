@@ -21,26 +21,12 @@
   <center><h4 style="color:pink">Faith Void | 26 | ae/aer </a></center>
   <center><h4 style="color:pink">Tkaronto-based programmer, experimental glitch artist, musician & photographer.</a></center>
     <center><br><br><br><br>
-                  <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+<div id="app"></div>
 <script src="https://unpkg.com/webamp"></script>
 <script>
-   const app = document.getElementById("app")
-    const webamp = new Webamp({
-    initialTracks: [
-                {
-                    metaData: {
-                        artist: "Yousuke Yasui",
-                        title: "Ace's Back"
-                    },
-                    url: "https://cdn.jsdelivr.net/gh/gnorkels/host@main/14%20-%20Ace's%20Back.flac",
-                },
-            initialSkin: {
-        url: "https://github.com/faithvoid/virtual.dimensionless.space/raw/main/art/angels_eyes.wsz"
-    },
-        });
-
-        // Returns a promise indicating when it's done loading.
-         webamp.renderWhenReady(app);
+    const app = document.getElementById("app")
+    const webamp = new Webamp();
+    webamp.renderWhenReady(app);
 </script>
     <pre style="color:pink">                  _ _-^^"-,---,
                   _-""./  ||//_  /
