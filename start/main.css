@@ -3,6 +3,7 @@
 
 body {
 	background-image: url("img/wall.png");
+	background-size: cover;
 	font-family: 'Fira Code', monospace;
 	color: #D9E0EE;
 	width: 100vw;
