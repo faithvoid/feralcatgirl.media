@@ -146,5 +146,35 @@
 				}
 
 				</script>
+	            <div id="app" align=right></div>
+<script src="https://unpkg.com/webamp" align=right></script>
+<script align=right>
+    const app = document.getElementById("app")
+    const webamp = new Webamp({
+    initialTracks: [
+                {
+                    metaData: {
+                        artist: "Chxrry",
+                        title: "starlit kisses"
+                    },
+                    url: "/music/starlitkisses.mp3",
+                },
+              {
+                                  metaData: {
+                        artist: "Chxrry",
+                        title: "absolutely wonderful"
+                    },
+                    url: "/music/absolutelywonderful.mp3",
+                }
+            ],
+            initialSkin: {
+        url: "/art/angels_eyes.wsz"
+    },
+        });
+
+        // Returns a promise indicating when it's done loading.
+         webamp.renderWhenReady(app);
+</script>
+	
 	</body>
 </html>
